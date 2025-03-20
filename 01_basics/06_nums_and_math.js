@@ -1,7 +1,7 @@
 const score = 400
 // console.log(score);
 
-const balance = new Number(100)
+const balance = new Number(100) //explicitly creating a number object
 // console.log(balance);
 
 // console.log(balance.toString().length);
@@ -17,7 +17,7 @@ const hundreds = 1000000
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
 // console.log(Math);
-// console.log(Math.abs(-4));
+// console.log(Math.abs(-4)); // sign change, negative to positive 
 // console.log(Math.round(4.6));
 // console.log(Math.ceil(4.2));
 // console.log(Math.floor(4.9));
