@@ -3,7 +3,7 @@ const repoCount = 50
 
 // console.log(name + repoCount + " Value");
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); 
 
 const gameName = new String('hitesh-hc-com')
 
@@ -24,7 +24,7 @@ console.log(anotherString);
 
 const newStringOne = "   hitesh    "
 console.log(newStringOne);
-console.log(newStringOne.trim());
+console.log(newStringOne.trim()); // Used during validations and entering form data
 
 const url = "https://hitesh.com/hitesh%20choudhary"
 
