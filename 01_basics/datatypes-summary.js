@@ -35,3 +35,25 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// stack, heap
+// stack - primitive 
+//heap - non primitive
+
+let myYoutubename = "fentybeauty"
+
+let anotherName = myYoutubename
+
+anotherName = "fentybeauty2"
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+let userOne = {
+    name: "ankit",
+    email: "ankit@gmail.com"
+}
+
+let userTwo = userOne
+userTwo.name = "hitesh"
+console.log(userOne);
