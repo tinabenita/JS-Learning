@@ -9,11 +9,11 @@ const user = {
 
 }
 
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
+user.welcomeMessage()
+user.username = "sam"
+user.welcomeMessage()
 
-// console.log(this);
+console.log(this); // window object is global object in browser
 
 // function chai(){
 //     let username = "hitesh"
@@ -43,7 +43,7 @@ const chai =  () => {
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
-const addTwo = (num1, num2) => ({username: "hitesh"})
+const addTwo = (num1, num2) => ({username: "hitesh"}) // implicit return object hence no return keyword
 
 
 console.log(addTwo(3, 4))
