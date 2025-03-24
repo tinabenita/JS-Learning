@@ -1,3 +1,6 @@
+// Objects in JavaScript are not iterable in the same way that arrays, strings, maps, and sets are. Therefore, to iterate over the properties of an object, you should use the for...in loop. The for...in loop iterates over the enumerable properties (keys) of an object.
+
+
 const myObject = {
     js: 'javascript',
     cpp: 'C++',
@@ -6,8 +9,10 @@ const myObject = {
 }
 
 for (const key in myObject) {
-    //console.log(`${key} shortcut is for ${myObject[key]}`);
+    //console.log(`${key} shortcut is for ${myObject[key]}`); // js shortcut is for javascript
 }
+
+
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
