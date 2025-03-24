@@ -46,7 +46,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5)) //will not throw error as function is hoisted
+console.log(addone(5)) //will not throw error as function is hoisted, function
 
 function addone(num){
     return num + 1
@@ -54,7 +54,7 @@ function addone(num){
 
 
 
-addTwo(5) // will throw error as function is not hoisted
+addTwo(5) // will throw error as function is not hoisted, function expression
 const addTwo = function(num){
     return num + 2
 }
