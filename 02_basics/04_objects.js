@@ -63,10 +63,11 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course // destructuring - takes the courseInstructor from course and assigns it to instructor. 
+// It also takes a value from the object and assigns it to a variable so we need not access it using dot notation and can directly use the variable name.
 
-// console.log(courseInstructor);
-console.log(instructor);
+// console.log(courseInstructor); // throws error
+console.log(instructor); // hitesh
 
 // {
 //     "name": "hitesh",
