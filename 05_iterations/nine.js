@@ -7,7 +7,7 @@ const myNums = [1, 2, 3]
 
 const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
 
-console.log(myTotal);
+console.log(myTotal); // 6
 
 
 const shoppingCart = [
@@ -31,4 +31,4 @@ const shoppingCart = [
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
-console.log(priceToPay);
+console.log(priceToPay); // 21996 = 2999 + 999 + 5999 + 12999
