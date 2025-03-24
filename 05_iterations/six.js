@@ -2,17 +2,19 @@
 
 
 // const values = coding.forEach( (item) => {
-//     //console.log(item);
-//     return item
+//     //console.log(item); // js, ruby, java, python, cpp
+//     return item 
 // } )
 
-// console.log(values);
+// console.log(values); // undefined
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
+
+// console.log(newNums); // [ 5, 6, 7, 8, 9, 10 ]
 
 // const newNums = []
 
@@ -22,7 +24,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //     }
 // } )
 
-// console.log(newNums);
+// console.log(newNums); // [ 5, 6, 7, 8, 9, 10 ]
 
 
 const books = [
@@ -42,4 +44,4 @@ const books = [
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
 })
-  console.log(userBooks);
+  console.log(userBooks); // [ { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 } ]
