@@ -23,7 +23,7 @@
     //     alert("owl clicked")
     // }
 
-     // attachEvent()
+    //  attachEvent() - used previously with Internet Explorer
     // jQuery - on
 
     // type, timestamp, defaultPrevented
@@ -31,14 +31,18 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
+    // The 'false' parameter is for the useCapture option in addEventListener
+    // When false (default), the event handler is set for the bubbling phase
+    // When true, the event handler is set for the capturing phase
+    // Event phases: 1. Capturing (top->down) 2. Target 3. Bubbling (bottom->up)
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation()
+    }, false)
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
@@ -47,16 +51,16 @@
     // }, false)
    
     
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
-        }
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
     
         
-    })
+    // })
     
     //removeIt.parentNode.removeChild(removeIt)
 </script>
