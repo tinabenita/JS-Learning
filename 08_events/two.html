@@ -19,6 +19,9 @@
 
     const changeMe = setTimeout(changeText, 2000)
 
+    // clearTimeout() cancels the delayed execution of changeText() that was scheduled by setTimeout
+    // without this clearTimeout, clicking the Stop button would not prevent the h1 text from changing
+    // changeMe holds the timer ID returned by setTimeout, which clearTimeout uses to identify which timer to cancel
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
         console.log("STOPPED")
