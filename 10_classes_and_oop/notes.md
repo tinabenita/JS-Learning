@@ -1,4 +1,5 @@
 # javascript and classes
+Classes are not really used. JS is a prototype based language.
 
 ## OOP
 
