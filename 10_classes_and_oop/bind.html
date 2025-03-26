@@ -29,3 +29,7 @@
     const app = new React()
 </script>
 </html>
+
+<!-- 
+If you do not use bind, the value of this inside the handleClick method will not refer to the instance of the React class when the method is called as an event handler. Instead, it will refer to the button element that triggered the event. As a result, this.server will be undefined, and you will not be able to access the server property of the React class instance.
+-->

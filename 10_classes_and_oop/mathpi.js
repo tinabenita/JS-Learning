@@ -1,10 +1,21 @@
 const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
 
-// console.log(descripter);
 
-// console.log(Math.PI);
+// console.log(descripter); // { value: 3.141592653589793, writable: false, enumerable: false, configurable: false }
+
+// console.log(Math.PI); // 3.141592653589793
 // Math.PI = 5
-// console.log(Math.PI);
+// console.log(Math.PI); // 3.141592653589793 (value of PI is not changed)
+
+const user = {
+    name: 'chai',
+    price: 250,
+    isAvailable: true,
+
+    orderChai: function(){
+        console.log("chai nhi bni");
+    }
+}
 
 const chai = {
     name: 'ginger chai',
@@ -16,7 +27,7 @@ const chai = {
     }
 }
 
-console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+console.log(Object.getOwnPropertyDescriptor(chai, "name")); // { value: 'ginger chai', writable: true, enumerable: true, configurable: true }
 
 Object.defineProperty(chai, 'name', {
     //writable: false,
@@ -24,7 +35,7 @@ Object.defineProperty(chai, 'name', {
     
 })
 
-console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+console.log(Object.getOwnPropertyDescriptor(chai, "name")); // { value: 'ginger chai', writable: false, enumerable: true, configurable: true }
 
 for (let [key, value] of Object.entries(chai)) {
     if (typeof value !== 'function') {
