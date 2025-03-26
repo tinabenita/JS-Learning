@@ -5,7 +5,7 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password){
-    SetUsername.call(this, username)
+    SetUsername.call(this, username) // call the function and pass the object. useful when we want to use the function of another object
    
     this.email = email
     this.password = password
