@@ -21,4 +21,4 @@ class User {
 }
 
 const hitesh = new User("h@hitesh.ai", "abc")
-console.log(hitesh.email);
+console.log(hitesh.email); // H@HITESH.AI
