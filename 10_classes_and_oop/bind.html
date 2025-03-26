@@ -17,7 +17,7 @@
             //requirement
             document
                 .querySelector('button')
-                .addEventListener('click', this.handleClick.bind(this))
+                .addEventListener('click', this.handleClick.bind(this)) // we use bind here because we want to bind the context of the class to the function. this is needed cause the function is called in the global scope and not in the class scope
 
         }
         handleClick(){
