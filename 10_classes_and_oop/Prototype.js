@@ -24,10 +24,10 @@ Array.prototype.heyHitesh = function(){
     console.log(`Hitesh says hello`);
 }
 
-// heroPower.hitesh()
-// myHeros.hitesh()
-// myHeros.heyHitesh()
-// heroPower.heyHitesh()
+heroPower.hitesh() // hitesh is present in all objects
+myHeros.hitesh() // hitesh is present in all objects - Array is also an object
+myHeros.heyHitesh() // Hitesh says hello
+// heroPower.heyHitesh() // Does not work because heroPower is not an array. Object is not inheriting from Array
 
 // inheritance
 
@@ -47,13 +47,13 @@ const TeachingSupport = {
 const TASupport = {
     makeAssignment: 'JS assignment',
     fullTime: true,
-    __proto__: TeachingSupport
+    __proto__: TeachingSupport // this is prototype chaining/ inheritance - old syntax
 }
 
 Teacher.__proto__ = User
 
 // modern syntax
-Object.setPrototypeOf(TeachingSupport, Teacher)
+Object.setPrototypeOf(TeachingSupport, Teacher) // injects property of teachingsupport into teacher
 
 let anotherUsername = "ChaiAurCode     "
 
@@ -65,3 +65,9 @@ String.prototype.trueLength = function(){
 anotherUsername.trueLength()
 "hitesh".trueLength()
 "iceTea".trueLength()
+
+/*
+Object.prototype will have all the methods and propterties that are common to all objects
+Array.prototype will have all the methods and propterties that are common to all arrays
+String.prototype will have all the methods and propterties that are common to all strings
+*/
