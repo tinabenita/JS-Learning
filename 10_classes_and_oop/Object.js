@@ -5,9 +5,9 @@ function multipleBy5(num){
 
 multipleBy5.power = 2
 
-console.log(multipleBy5(5));
-console.log(multipleBy5.power);
-console.log(multipleBy5.prototype);
+console.log(multipleBy5(5)); // 25
+console.log(multipleBy5.power); // 2
+console.log(multipleBy5.prototype); // {} because multipleBy5 is not a class
 
 function createUser(username, score){
     this.username = username
@@ -21,10 +21,12 @@ createUser.prototype.printMe = function(){
     console.log(`price is ${this.score}`);
 }
 
-const chai = new createUser("chai", 25)
-const tea = createUser("tea", 250)
+console.log(createUser.prototype); // { increment: [Function], printMe: [Function] }
 
-chai.printMe()
+const chai = new createUser("chai", 25) // new is needed because createUser is a constructor function 
+const tea = createUser("tea", 250) 
+
+chai.printMe() // price is 25
 
 
 /*
